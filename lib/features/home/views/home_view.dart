@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
+import '../../../core/constants/app_routes.dart';
 import '../../../core/utils/assets.dart';
 import '../../../core/utils/responsive_helper.dart';
 import '../../order_detail/models/delivery_order_model.dart';
@@ -275,7 +276,7 @@ class HomeView extends StatelessWidget {
               status: order.status == 'pending' ? 'Pending' : order.status,
               statusColor: const Color(0xFFF39C12),
               onArrowTap: () {
-                // TODO: Get.toNamed(AppRoutes.orderDetail, arguments: order)
+                Get.toNamed(AppRoutes.orderDetail); //, arguments: order
               },
             ),
           );

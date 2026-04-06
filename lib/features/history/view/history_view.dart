@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../core/constants/app_routes.dart';
 import '../../../core/utils/responsive_helper.dart';
 import '../../home/views/widget/orders_card.dart';
 import '../controller/history_controller.dart';
@@ -42,7 +43,7 @@ class HistoryView extends StatelessWidget {
                     status: order.status,
                     statusColor: const Color(0xFF2ECC71),
                     onArrowTap: () {
-                      // TODO: navigate to order detail
+                      Get.toNamed(AppRoutes.orderDetail); //, arguments: order
                     },
                   ),
                 );

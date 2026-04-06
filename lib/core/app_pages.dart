@@ -7,6 +7,7 @@ import '../features/auth/views/login_view.dart';
 import '../features/auth/views/splash_view.dart';
 import '../features/bottom_nav/view/widget/bottom_nav_view.dart';
 import '../features/home/bindings/home_bindings.dart';
+import '../features/order_details/view/order_details_view.dart';
 import '../features/profile/view/personal_details_view.dart';
 import 'constants/app_routes.dart';
 
@@ -24,12 +25,10 @@ class AppPages {
         name: AppRoutes.bottomNav,
         page: () => const BottomNavView(),
         binding: HomeBinding()),
+    GetPage(name: AppRoutes.orderDetail, page: () => const OrderDetailView()),
     GetPage(
         name: AppRoutes.personalDetails,
         page: () => const PersonalDetailsView()),
-    GetPage(
-        name: AppRoutes.orderDetail,
-        page: () => const _Placeholder('Order Detail')),
     GetPage(
         name: AppRoutes.activeDelivery,
         page: () => const _Placeholder('Active Delivery')),
